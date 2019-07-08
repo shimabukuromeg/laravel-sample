@@ -47,7 +47,7 @@ services:
     depends_on:
       - php
     ports:
-      - 8080:80
+      - 8888:80
   db:
     image: mysql:5.7
     volumes:
@@ -57,7 +57,7 @@ services:
       MYSQL_DATABASE: laravel_local
       MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
     ports:
-      - 3306:3306
+      - 3333:3306
   redis:
     image: redis:4-alpine
     ports:
